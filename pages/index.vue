@@ -52,7 +52,7 @@ useHead({
 				</NuxtLink>
 			</nav>
 
-			<span></span>
+			<a href="#bookings" class="absolute bottom-0 left-1/2 m-3 rotate-180 text-white font-bold text-6xl hover:cursor-pointer">^</a>
 		</header>
 
 		<section id="bookings" class="h-svh mt-5 p-4">
