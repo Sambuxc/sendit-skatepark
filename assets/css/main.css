@@ -1,0 +1,9 @@
+@import './tailwind.css';
+
+h2 {
+	@apply text-3xl text-center;
+}
+
+mark {
+	@apply p-2 rounded;
+}
