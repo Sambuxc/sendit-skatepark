@@ -630,6 +630,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.36.0.tgz#9837f768c03a1e4a30bd304a64fb8844f0e72efe"
   integrity sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==
 
+"@googlemaps/js-api-loader@^1.13.9":
+  version "1.16.8"
+  resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.16.8.tgz#1595a2af80ca07e551fc961d921a2437d1cb3643"
+  integrity sha512-CROqqwfKotdO6EBjZO/gQGVTbeDps5V7Mt9+8+5Q+jTg5CRMi3Ii/L9PmV3USROrt2uWxtGzJHORmByxyo9pSQ==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.14"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.14.tgz#d78e481a039f7566ecc9660b4ea7fe6b1fec442b"
@@ -2193,6 +2198,11 @@ cookie-es@^1.1.0:
   resolved "https://registry.yarnpkg.com/cookie-es/-/cookie-es-1.2.2.tgz#18ceef9eb513cac1cb6c14bcbf8bdb2679b34821"
   integrity sha512-+W7VmiVINB+ywl1HGXJXmrqkOhpKrIiVZV6tQuV54ZyQC7MMuBt81Vc336GMLoHBq5hV/F9eXgt5Mnx0Rha5Fg==
 
+core-js@^3.8.3:
+  version "3.38.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.38.1.tgz#aa375b79a286a670388a1a363363d53677c0383e"
+  integrity sha512-OP35aUorbU3Zvlx7pjsFdu1rGNnD4pgw/CWoYzRY3t2EzoVT7shKHY1dlAy3f41cGIO7ZDPQimhGFTlEYkG/Hw==
+
 core-util-is@~1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.3.tgz#a6042d3634c2b27e9328f837b965fac83808db85"
@@ -3563,6 +3573,13 @@ globby@^14.0.2:
     path-type "^5.0.0"
     slash "^5.1.0"
     unicorn-magic "^0.1.0"
+
+google-maps-loader-helper@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/google-maps-loader-helper/-/google-maps-loader-helper-1.0.0.tgz#c6c99b3fcd142cd444247865af45ffb311d358b7"
+  integrity sha512-RbQWhqiCz/fYcKPpFYwqWN/fCOr2rc8zEFLdGVNXJobFjRBKiw4Lp722J8t9YXC2zJd7AzmVaDWX2WLAgExe6Q==
+  dependencies:
+    "@googlemaps/js-api-loader" "^1.13.9"
 
 gopd@^1.0.1:
   version "1.0.1"
@@ -6749,6 +6766,14 @@ vue-eslint-parser@^9.4.3:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-google-maps-ui@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vue-google-maps-ui/-/vue-google-maps-ui-1.0.0.tgz#c525e3799c5baf2ff853118e3ad71fa2cadf4d39"
+  integrity sha512-6uJWUQvanKuuj6ZwcELXgXXh49vVlwzXZ3T6OpN3g4JoyIiCLQmUo1+AsfFyzyccnc7gusnrdetnlG6reZnF/A==
+  dependencies:
+    core-js "^3.8.3"
+    google-maps-loader-helper "^1.0.0"
 
 vue-router@^4.1.6:
   version "4.4.3"
