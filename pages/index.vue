@@ -28,8 +28,8 @@
 					</NuxtLink>
 
 					<!-- <NuxtLink to="/greet" class="bg-green mt-2 rounded-full p-8 border-8 border-black text-black font-semibold w-40"> -->
-					<NuxtLink to="#location">
-						Location
+					<NuxtLink to="#events">
+						Events
 					</NuxtLink>
 					<!-- <NuxtLink to="/greet" class="bg-red mt-2 rounded-full p-8 border-8 border-black text-black font-semibold w-40"> -->
 					<NuxtLink to="#ramps">
@@ -43,10 +43,26 @@
 				</div>
 			</nav>
 
+			<section class="container w-full h-full flex flex-col items-center justify-center">
+				<div class="p-5 w-fit flex flex-col justify-center items-center bg-slate-50 bg-opacity-75 rounded-lg">
+					<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-center">
+						Send It SkatePark
+					</h1>
+					<p class="mb-5 pt-5 text-center text-xl md:text-2xl lg:text-3xl">
+						A non-profit organisation
+						<br/>
+						changing the world one skate ramp at a time.
+					</p>
+					<button class="btn-primary">
+						Book Now
+					</button>
+				</div>
+			</section>
+
 			<a href="#bookings" class="absolute bottom-0 left-1/2 m-3 font-bold text-6xl hover:cursor-pointer">↓</a>
 		</header>
 
-		<section id="bookings" class="p-5 bg-blue">
+		<section id="bookings" class="brand-top-border p-5 bg-blue">
 			<h2>
 				<mark class="bg-yellow"> Book your next skate </mark>
 			</h2>
@@ -56,8 +72,99 @@
 				width="640" height="1659" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 		</section>
 
-		<section id="location" class="p-5 bg-green">
+		<section id="events" class="brand-top-border p-5 bg-green text-center">
 			<h2>Find Us In Your Local Area</h2>
+			<p>
+				We are always on the move, find us in your local area. Charity events, skate parks, schools, and more.
+			</p>
+
+			<div class="gallery-wrapper my-5 grid grid-cols-2 md:grid-cols-5 gap-4">
+				<div class="gallery-col grid gap-4">
+					<div class="gallery-item">
+						<img class="h-full max-w-full rounded-lg"src="../assets/images/reece-scooter-lessons-stockport.jpg" alt="" height="500"/>
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery-col grid gap-4">
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-full max-w-full rounded-lg"src="../assets/images/reece-scooter-lessons-stockport.jpg" alt="" height="500"/>
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery-col grid gap-4">
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-full max-w-full rounded-lg"src="../assets/images/reece-scooter-lessons-stockport.jpg" alt="" height="500"/>
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery-col grid gap-4">
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-full max-w-full rounded-lg"src="../assets/images/reece-scooter-lessons-stockport.jpg" alt="" height="500"/>
+					</div>
+				</div>
+				<div class="gallery-col grid gap-4">
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-full max-w-full rounded-lg"src="../assets/images/reece-scooter-lessons-stockport.jpg" alt="" height="500"/>
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-2.jpg" alt="">
+					</div>
+					<div class="gallery-item">
+						<img class="h-auto max-w-full rounded-lg"src="../assets/images/send-it-skatepark-skate-events-ashton.jpg" alt="">
+					</div>
+				</div>
+			</div>
 
 			<GMap
 				class="bg-transparent"
@@ -85,7 +192,7 @@ useHead({
 
 <style lang="scss">
 header {
-	@apply relative p-4 w-svw h-svh flex flex-col lg:flex-row lg:items-start justify-between;
+	@apply relative p-4 w-svw h-svh flex flex-col items-center;
 	//@apply bg-gradient-to-t from-orange-100 to-transparent from-0% to-20%;
 
 	background-image: url('assets/images/house-of-vans.jpg');
@@ -94,8 +201,21 @@ header {
 	background-repeat: no-repeat;
 }
 
-section::before {
+section {
+	@apply relative;
+}
 
+.brand-top-border::before {
+	@apply absolute left-0 top-0 block h-3 w-full;
+	content: '';
+	border: 10px solid transparent;
+	border-image: url('assets/images/send-it-skate-ramps-logo.png') 30 round;
+	z-index: 999;
+}
+
+section.brand-top-border {
+	/* Add more padding when using top boards */
+	@apply pt-10;
 }
 
 nav {
@@ -125,5 +245,9 @@ nav {
 	a:nth-child(4) {
 		@apply bg-yellow hover:bg-yellow-light;
 	}
+}
+
+.gallery-item > img {
+	box-shadow: 0 0 6px rgb(0, 0, 0, 0.25);
 }
 </style>

@@ -3,7 +3,7 @@ html {
 }
 
 h2 {
-	@apply text-lg sm:text-2xl md:text-3xl lg:text-4xl text-center;
+	@apply mb-5 text-lg sm:text-2xl md:text-3xl lg:text-4xl text-center;
 }
 
 mark {
