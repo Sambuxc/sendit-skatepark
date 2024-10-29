@@ -1,5 +1,6 @@
 html {
 	font-family: 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji';
+	scroll-behavior: smooth;
 }
 
 h2 {
@@ -8,4 +9,12 @@ h2 {
 
 mark {
 	@apply p-2 rounded leading-normal;
+}
+
+p:has(+ p) {
+	@apply pb-4;
+}
+
+a:has(img) {
+	@apply inline-block;
 }
