@@ -32,7 +32,7 @@
 						Events
 					</NuxtLink>
 					<!-- <NuxtLink to="/greet" class="bg-red mt-2 rounded-full p-8 border-8 border-black text-black font-semibold w-40"> -->
-					<NuxtLink to="#ramps">
+					<NuxtLink to="#gallery">
 						Ramps
 					</NuxtLink>
 
@@ -78,7 +78,14 @@
 				We are always on the move, find us in your local area. Charity events, skate parks, schools, and more.
 			</p>
 
-			<div class="gallery-wrapper my-5 grid grid-cols-2 md:grid-cols-5 gap-4">
+			<p>
+				<a class="mx-auto" href="https://www.google.com/maps/place/Metropolitan+Borough+of+Stockport/@53.3065325,-2.6831561,11z/data=!4m6!3m5!1s0x487bb4c22bd3bcdb:0x40cf99eed6d33c0!8m2!3d53.3933086!4d-2.1266343!16zL20vMDg0c2o2?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">
+					<img class="box-shadow rounded-lg" width="600"
+					src="../assets/images/portable-skate-ramps-in-stockport-borough.png" alt="Map of skate ramps in stockport borough" />
+				</a>
+			</p>
+
+			<div id="gallery" class="gallery-wrapper my-5 grid grid-cols-2 md:grid-cols-5 gap-4">
 				<div class="gallery-col grid gap-4">
 					<div class="gallery-item">
 						<img class="h-full max-w-full rounded-lg"src="../assets/images/reece-scooter-lessons-stockport.jpg" alt="" height="500"/>
@@ -247,7 +254,8 @@ nav {
 	}
 }
 
-.gallery-item > img {
+.gallery-item > img,
+.box-shadow {
 	box-shadow: 0 0 6px rgb(0, 0, 0, 0.25);
 }
 </style>
