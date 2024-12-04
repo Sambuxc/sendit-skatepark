@@ -281,19 +281,6 @@ section {
 	@apply relative;
 }
 
-.brand-top-border::before {
-	@apply absolute left-0 top-0 block h-3 w-full;
-	content: '';
-	border: 10px solid transparent;
-	border-image: url('assets/images/send-it-skate-ramps-logo.png') 30 round;
-	z-index: 999;
-}
-
-section.brand-top-border {
-	/* Add more padding when using top boards */
-	@apply pt-10;
-}
-
 nav {
 	z-index: 100;
 
