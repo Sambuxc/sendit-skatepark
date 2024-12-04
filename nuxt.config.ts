@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 // https://vuetifyjs.com/en/getting-started/installation/#manual-setup
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: [
@@ -38,8 +39,7 @@ export default defineNuxtConfig({
   },
 	runtimeConfig: {
 		public: {
-			// @ts-expect-error
-			baseUrl: process.env.BASE_URL || '/',
+			baseUrl: 'https://senditskatepark.com/',
 		},
 	},
 });
