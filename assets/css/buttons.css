@@ -1,7 +1,0 @@
-button {
-	@apply border-0 appearance-none
-}
-
-.btn-primary {
-	@apply bg-blue-500 text-white font-semibold px-5 py-4 border-4 border-solid border-black hover:bg-green transition-all duration-500 hover:-translate-y-2;
-}
