@@ -7,7 +7,7 @@ const {
 
 <template>
 	<div
-		class="here v-theme--baseTheme d-flex flex-column justify-center align-center"
+		class="v-theme--baseTheme d-flex flex-column justify-center align-center"
 	>
 		<NuxtPage />
 

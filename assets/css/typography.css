@@ -4,7 +4,15 @@ html {
 }
 
 h2 {
-	@apply mb-5 text-lg sm:text-2xl md:text-3xl lg:text-4xl text-center;
+	@apply mb-5 font-semibold text-3xl lg:text-5xl text-center;
+}
+
+h3 {
+	@apply text-2xl lg:text-4xl;
+}
+
+p, li {
+	@apply text-base lg:text-2xl;
 }
 
 mark {
@@ -12,9 +20,17 @@ mark {
 }
 
 p:has(+ p) {
-	@apply pb-4;
+	@apply pb-2;
+}
+
+a {
+	@apply underline hover:italic;
 }
 
 a:has(img) {
 	@apply inline-block;
+}
+
+article p {
+	@apply text-left;
 }
