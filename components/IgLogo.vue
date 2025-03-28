@@ -1,5 +1,5 @@
 <template>
-	<div>§
+	<div>
 		<svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"
 			xmlns:xlink="https://www.w3.org/1999/xlink">
 			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
