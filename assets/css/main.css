@@ -1,3 +1,20 @@
 @import './tailwind.css';
 @import './typography.css';
 @import './buttons.css';
+
+html:before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('https://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  opacity: .9;
+  visibility: visible;
+  pointer-events: none;
+  z-index: 900000000;
+}

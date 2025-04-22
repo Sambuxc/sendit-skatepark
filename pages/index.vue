@@ -6,7 +6,7 @@
 					<div
 						class="absolute inset-0 left-0 top-0 m-auto md:min-w-[315px] md:min-h-[560px] md:max-w-[630px] md:max-h-[1120px]">
 						<iframe class="rounded-md" width="100%" height="100%"
-							src="https://www.youtube.com/embed/UONjoA2oBeU?rel=0&autoplay=1&loop=1&controls=0&playlist=UONjoA2oBeU"
+							src="https://www.youtube.com/embed/QQ2oNzQyJjI?rel=0&autoplay=1&loop=1&controls=0"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen>
