@@ -1,26 +1,42 @@
 <template>
 	<main class="w-svw h-svh">
 		<HeaderDefault>
-			<section class="w-full h-full flex flex-col items-center justify-center">
-				<img class="w-full h-full object-cover" src="../assets/images/Sendit-skatepark-located-in-stockport.jpg"
+			<template #hero>
+				<article class="relative bg-black w-full h-screen">
+					<div
+						class="absolute inset-0 left-0 top-0 m-auto md:min-w-[315px] md:min-h-[560px] md:max-w-[630px] md:max-h-[1120px]">
+						<iframe class="rounded-md" width="100%" height="100%"
+							src="https://www.youtube.com/embed/UONjoA2oBeU?rel=0&autoplay=1&loop=1&controls=0&playlist=UONjoA2oBeU"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
+				</article>
+			</template>
+			<!-- <section class="w-full h-full flex flex-col items-center justify-center"> -->
+			<!-- <img class="w-full h-full object-cover" src="../assets/images/Sendit-skatepark-located-in-stockport.jpg"
 				alt="Send it Skatepark stockport ramps" />
 				<HeaderContentBlock
 				class="bottom-0 md:bottom-10"
 				title="Send It Skatepark"
 				description="Providing opportunities for <br/>young people to learn, skate and grow."
-				/>
-			</section>
+				/> -->
+			<!-- </section> -->
 		</HeaderDefault>
 
 		<section id="our-events" class="w-full h-fit flex flex-col md:flex-row items-center justify-center bg-yellow-50">
 			<div class="md:flex-1 md:w-full h-full flex flex-col order-last md:order-first">
-				<img class="object-contain" src="../assets/images/Sendit-skatepark-teaching-kids-to-skate.jpg"
-					alt="Send it Skatepark team" />
+				<img
+					class="object-contain"
+					src="../assets/images/Sendit-skatepark-teaching-kids-to-skate.jpg"
+					alt="Send it Skatepark team"
+				/>
 			</div>
 
 			<div class="md:flex-1 flex flex-col items-center justify-center order-first md:order-last">
 				<article class="my-2 p-5 w-full">
-					<h2>Our events</h2>
+					<h2>Events</h2>
 
 					<p class="text-center">
 						We provide portable ramps for a variety of events,<br />community fairs, charity events, school fairs,
@@ -44,24 +60,27 @@
 					</ul>
 
 					<p class="text-center">View more on our <a class="text-blue"
-							href="https://www.instagram.com/senditstockport/tagged" target="_blank">Instagram.</a></p>
+							href="https://www.instagram.com/senditskatepark/tagged" target="_blank">Instagram.</a></p>
 				</article>
 
 			</div>
 
 			<div class="md:flex-1 md:w-full h-full flex flex-col order-first md:order-last">
-				<img
-					class="object-contain"
-					src="../assets/images/Sendit-skatepark-bosden-farm.jpg"
+				<img class="object-contain" src="../assets/images/Sendit-skatepark-bosden-farm.jpg"
 					alt="Send it Skatepark team" />
 			</div>
 		</section>
+
+		<Events />
 
 		<section class="py-12 w-full h-fit flex flex-col items-start justify-center bg-blue">
 			<div class="p-9 container mx-auto w-full h-full flex flex-col items-start">
 				<h2 class="mb-9 uppercase">Partnering with...</h2>
 				<p>We are proud to partner with these organisations to provide the best experiences for our community.</p>
-				<p class="mb-10">If you would like to book us please send us a direct message on our <a class="" href="https://www.instagram.com/senditstockport/tagged" target="_blank">Instagram page.</a></p>
+				<p class="mb-10">If you would like to book us please send us a direct message on our
+					<a href="https://www.instagram.com/senditskatepark/tagged"
+						target="_blank">Instagram page.
+					</a></p>
 			</div>
 
 			<div class="p-5 container mx-auto flex flex-col md:flex-row justify-center items-center gap-5">
@@ -174,7 +193,8 @@
 				</article>
 
 				<article class="w-full md:w-1/3 flex flex-col items-center bg-white p-5 rounded-lg shadow-lg">
-					<img src="../assets/images/aston-sendit-skatepark.jpg" alt="Community events with Send it Skatepark" class="mb-6 box-shadow rounded-md" />
+					<img src="../assets/images/aston-sendit-skatepark.jpg" alt="Community events with Send it Skatepark"
+						class="mb-6 box-shadow rounded-md" />
 					<h3>Bosden Youth Centre</h3>
 					<p class="text-center">Providing opportunities for youth to learn and grow.</p>
 					<!-- <a href="https://www.facebook.com/events/bosden-pub-dining-car-park/bosden-youth-present-skate-n-shop/438581158990278/"
@@ -189,15 +209,10 @@
 				src="../assets/images/Sendit-skatepark-meet-the-team.jpg"
 				alt="Send it Skatepark in Stockport and surrounding areas"
 			/> -->
-			<img
-				class="w-full h-svh object-cover"
-					src="../assets/images/Sendit-skatepark-modular-portable-ramps.jpg"
-					alt="Send it Skatepark team" />
+			<img class="w-full h-svh object-cover" src="../assets/images/Sendit-skatepark-modular-portable-ramps.jpg"
+				alt="Send it Skatepark team" />
 
-			<HeaderContentBlock
-				class="bottom-10 md:mt-44"
-				title="We hope to see you soon!"
-			/>
+			<HeaderContentBlock class="bottom-10 md:mt-44" title="We hope to see you soon!" />
 		</section>
 
 		<!-- <section id="bookings" class="relative brand-top-border p-5 bg-blue">
@@ -227,11 +242,10 @@
 </template>
 
 <script lang="ts" setup>
-import LogoHeader from '../components/LogoHeader.vue';
 import { useHead } from '@vueuse/head';
 
 useHead({
-	title: 'Send it Stockport - Portable Skate Ramps',
+	title: 'Send it Skatepark - Skate anywhere!',
 	meta: [
 		{
 			name: 'Portable skate ramps to hire, rent for birthdays and parties',
