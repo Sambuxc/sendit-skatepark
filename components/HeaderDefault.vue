@@ -47,9 +47,31 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue';
 
+const navHeight = 70; // scroll starts from (in px)
+const trigger = 10; // how far to scroll (in px) before triggering
+let lastScrollY = 0;
+
 function handleScroll() {
 		let header = document.getElementsByTagName('nav')[0];
-		header.classList.toggle('-translate-y-48', window.scrollY > 300);
+		let currentY = window.scrollY;
+		console.log(currentY, lastScrollY);
+		if (Math.abs(lastScrollY - currentY) > trigger) { // hide nav
+			console.log('scrolling...');
+			if (currentY > lastScrollY && currentY > navHeight) {
+				console.log('hiding...');
+				// nav.classList.add("nav-up");
+				header.classList.add('-translate-y-48', window.scrollY > trigger);
+				header.classList.remove('translate-y-0', window.scrollY > trigger);
+			}
+			else if (currentY < lastScrollY) { // show nav
+				console.log('showing...');
+				// nav.classList.remove("nav-up");
+				header.classList.remove('-translate-y-48', window.scrollY > trigger);
+				header.classList.add('translate-y-0', window.scrollY > trigger);
+			}
+		// update current scroll point
+		lastScrollY = currentY;
+		}
 	}
 
 onMounted(() => {
