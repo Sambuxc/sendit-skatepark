@@ -18,3 +18,12 @@ html:before {
   pointer-events: none;
   z-index: 900000000;
 }
+
+/* NavBar */
+nav {
+	z-index: 100;
+
+	a {
+		@apply rounded-full p-5 border-4 border-black text-base text-black font-semibold hover:italic;
+	}
+}

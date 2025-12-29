@@ -1,27 +1,25 @@
 <template>
 	<main class="w-svw h-svh">
 		<HeaderDefault>
-			<template #hero>
-				<article class="relative bg-black w-full h-screen">
-					<div
-						class="absolute inset-0 left-0 top-0 m-auto md:min-w-[315px] md:min-h-[560px] md:max-w-[630px] md:max-h-[1120px]">
-						<iframe class="rounded-md" width="100%" height="100%"
-							src="https://www.youtube.com/embed/2nYtd-ewtuE?rel=0&autoplay=1&loop=1&controls=0&related=0" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</div>
-				</article>
-			</template>
-			<!-- <section class="w-full h-full flex flex-col items-center justify-center"> -->
-			<!-- <img class="w-full h-full object-cover" src="../assets/images/Sendit-skatepark-located-in-stockport.jpg"
+			<article class="relative bg-black w-full h-screen">
+				<div
+					class="absolute inset-0 left-0 top-0 m-auto md:min-w-[315px] md:min-h-[560px] md:max-w-[630px] md:max-h-[1120px]">
+					<iframe class="rounded-md" width="100%" height="100%"
+						src="https://www.youtube.com/embed/2nYtd-ewtuE?rel=0&autoplay=0&loop=1&controls=0&related=0" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</article>
+			<!-- <section class="w-full h-full flex flex-col items-center justify-center">
+			<img class="w-full h-full object-cover" src="../assets/images/Sendit-skatepark-located-in-stockport.jpg"
 				alt="Send it Skatepark stockport ramps" />
 				<HeaderContentBlock
 				class="bottom-0 md:bottom-10"
 				title="Send It Skatepark"
 				description="Providing opportunities for <br/>young people to learn, skate and grow."
-				/> -->
-			<!-- </section> -->
+				/>
+			</section> -->
 		</HeaderDefault>
 
 		<section id="our-events" class="w-full h-fit flex flex-col md:flex-row items-center justify-center bg-yellow-50">
@@ -96,8 +94,7 @@
 										<div
 											style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
 										</div>
-										<div
-											style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; width: 60px;">
+										<div style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; width: 60px;">
 										</div>
 									</div>
 								</div>
@@ -134,8 +131,7 @@
 										</div>
 									</div>
 									<div style="margin-left: 8px;">
-										<div
-											style=" background-color: #F4F4F4; border-radius: 50%; grow: 0; height: 20px; width: 20px;">
+										<div style=" background-color: #F4F4F4; border-radius: 50%; grow: 0; height: 20px; width: 20px;">
 										</div>
 										<div
 											style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
@@ -158,8 +154,7 @@
 									<div
 										style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
 									</div>
-									<div
-										style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; width: 144px;">
+									<div style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; width: 144px;">
 									</div>
 								</div>
 							</a>
@@ -198,26 +193,10 @@
 		</section>
 
 		<section class="w-full h-full flex flex-col items-center justify-center">
-			<!-- <img
-				class="w-full h-svh object-cover"
-				src="../assets/images/Sendit-skatepark-meet-the-team.jpg"
-				alt="Send it Skatepark in Stockport and surrounding areas"
-			/> -->
 			<img class="w-full h-svh object-cover" src="../assets/images/Sendit-skatepark-modular-portable-ramps.jpg"
 				alt="Send it Skatepark team" />
 
-			<!-- <HeaderContentBlock class="bottom-10 md:mt-44" title="We hope to see you soon!" /> -->
 		</section>
-
-		<!-- <section id="bookings" class="relative brand-top-border p-5 bg-blue">
-			<h2>
-				<mark class="bg-yellow"> Book your next skate </mark>
-			</h2>
-
-			<iframe class="mt-5 w-full lg:w-1/2 mx-auto"
-				src="https://docs.google.com/forms/d/e/1FAIpQLSclgSffLthp4IqrC4rBlOgosUPEsH57W8Gh92Qx-VhrEuqE-A/viewform?embedded=true"
-				width="640" height="1659" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		</section> -->
 
 		<section id="find-us" class="relative brand-top-border py-12 px-5 bg-green text-center">
 			<h2><span class="italic">SEND IT</span>&nbsp; Skateparks</h2>
@@ -259,42 +238,7 @@
 			<hr class="border-black" />
 			<small class="flex justify-center mt-6">
 				SEND IT Skateparks - Est 2023
-
 			</small>
 		</footer>
 	</main>
 </template>
-
-<script lang="ts" setup>
-import { useHead } from '@vueuse/head';
-
-useHead({
-	title: 'Send it Skatepark - Skate anywhere!',
-	meta: [
-		{
-			name: 'Portable skate ramps to hire, rent for birthdays and parties',
-			content: 'Portable skate ramps to hire, rent for birthdays and parties',
-		},
-	],
-	script: [
-		{
-			src: '//www.instagram.com/embed.js',
-			async: true,
-		},
-	],
-});
-</script>
-
-<style lang="scss">
-section {
-	@apply relative;
-}
-
-nav {
-	z-index: 100;
-
-	a {
-		@apply rounded-full p-5 border-4 border-black text-base text-black font-semibold hover:italic;
-	}
-}
-</style>
