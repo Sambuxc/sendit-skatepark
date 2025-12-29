@@ -90,14 +90,14 @@
 								target="_blank">
 								<div style=" display: flex; flex-direction: row; align-items: center;">
 									<div
-										style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+										style="background-color: #F4F4F4; border-radius: 50%; grow: 0; height: 40px; margin-right: 14px; width: 40px;">
 									</div>
-									<div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+									<div style="display: flex; flex-direction: column; grow: 1; justify-content: center;">
 										<div
-											style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+											style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
 										</div>
 										<div
-											style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+											style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; width: 60px;">
 										</div>
 									</div>
 								</div>
@@ -127,7 +127,7 @@
 											style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
 										</div>
 										<div
-											style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+											style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; grow: 0; margin-right: 14px; margin-left: 2px;">
 										</div>
 										<div
 											style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
@@ -135,7 +135,7 @@
 									</div>
 									<div style="margin-left: 8px;">
 										<div
-											style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+											style=" background-color: #F4F4F4; border-radius: 50%; grow: 0; height: 20px; width: 20px;">
 										</div>
 										<div
 											style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
@@ -146,7 +146,7 @@
 											style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
 										</div>
 										<div
-											style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+											style=" background-color: #F4F4F4; grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
 										</div>
 										<div
 											style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
@@ -154,12 +154,12 @@
 									</div>
 								</div>
 								<div
-									style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+									style="display: flex; flex-direction: column; grow: 1; justify-content: center; margin-bottom: 24px;">
 									<div
-										style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+										style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
 									</div>
 									<div
-										style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+										style=" background-color: #F4F4F4; border-radius: 4px; grow: 0; height: 14px; width: 144px;">
 									</div>
 								</div>
 							</a>

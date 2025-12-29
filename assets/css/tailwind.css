@@ -1,3 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+	/* Custom brand colors - these will be available as bg-blue, bg-green, etc. */
+	--color-blue: #007DC5;
+	--color-green: #009659;
+	--color-red: #ED1C24;
+	--color-yellow: #FFF200;
+}

@@ -1824,6 +1824,15 @@
     postcss "^8.4.41"
     tailwindcss "4.1.18"
 
+"@tailwindcss/vite@^4.1.18":
+  version "4.1.18"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/vite/-/vite-4.1.18.tgz#614b9d5483559518c72d31bca05d686f8df28e9a"
+  integrity sha512-jVA+/UpKL1vRLg6Hkao5jldawNmRo7mQYrZtNHMIVpLfLhDml5nMRUo/8MwoX2vNXvnaXNNMedrMfMugAVX1nA==
+  dependencies:
+    "@tailwindcss/node" "4.1.18"
+    "@tailwindcss/oxide" "4.1.18"
+    tailwindcss "4.1.18"
+
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"

@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 // https://vuetifyjs.com/en/getting-started/installation/#manual-setup
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import tailwindcss from "@tailwindcss/vite"
 
 export default defineNuxtConfig({
 	compatibilityDate: '2025-12-29',
@@ -13,7 +14,6 @@ export default defineNuxtConfig({
       })
     },
 		'@pinia/nuxt',
-		'tailwindcss'
 	],
 	pinia: {
 		autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
@@ -31,13 +31,10 @@ export default defineNuxtConfig({
         transformAssetUrls,
       },
     },
+		plugins: [
+			tailwindcss(),
+		],
 	},
-	postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
 	runtimeConfig: {
 		public: {
 			baseUrl: 'https://senditskatepark.com/',
