@@ -212,6 +212,10 @@
 					alt="Map of skate ramps in stockport borough" />
 				<!-- </a> -->
 			</p>
+
+			<article class="mt-12">
+				<ContactForm />
+			</article>
 		</section>
 
 		<footer class="py-6 bg-green text-white text-center">

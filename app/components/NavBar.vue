@@ -19,7 +19,7 @@
 			</div>
 
 			<div class="flex flex-col md:flex-row items-center gap-2 md:gap-5">
-				<NuxtLink to="mailto:senditskatepark@hotmail.com" class="bg-green text-black no-underline">
+				<NuxtLink to="#contact-us" class="bg-green text-black no-underline">
 					Contact
 				</NuxtLink>
 
