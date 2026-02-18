@@ -26,7 +26,7 @@
 		</div>
 
 		<div class="field">
-			<button type="submit" label="Submit" :disabled="submitting">
+			<button type="submit" :disabled="submitting">
 				<span v-if="submitting">Submitting...</span>
 				<span v-else>Send</span>
 			</button>
@@ -91,10 +91,11 @@ async function onFormSubmit(e) {
 			name: name.value,
 			subject: subject.value,
 			message: message.value,
+			service: 'Send It Skatepark',
 		}
 
 		try {
-			const response = await fetch('http://localhost:3000/send-mailer', {
+			const response = await fetch('https://lib-tech.work/send-mailer', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
