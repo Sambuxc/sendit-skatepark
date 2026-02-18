@@ -14,7 +14,6 @@ html:before {
 	height: 200vh;
 	background: transparent
 		url('https://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-	background-repeat: repeat;
 	opacity: 0.9;
 	visibility: visible;
 	pointer-events: none;

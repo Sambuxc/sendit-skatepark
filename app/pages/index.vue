@@ -3,14 +3,13 @@
 		<HeaderDefault>
 			<article class="relative bg-black w-full h-screen">
 				<div
-					class="absolute inset-0 left-0 top-0 m-auto md:min-w-[315px] md:min-h-[560px] md:max-w-[630px] md:max-h-[1120px]"
+					class="absolute inset-0 left-0 top-0 m-auto md:min-w-78.75 md:min-h-140 md:max-w-157.5 md:max-h-280"
 				>
 					<iframe
 						class="rounded-md"
 						width="100%"
 						height="100%"
 						src="https://www.youtube.com/embed/2nYtd-ewtuE?rel=0&autoplay=0&loop=1&controls=0&related=0"
-						frameborder="0"
 						allow="
 							accelerometer;
 							autoplay;
@@ -178,7 +177,7 @@
 										style="
 											background-color: #f4f4f4;
 											border-radius: 50%;
-											grow: 0;
+											flex-grow: 0;
 											height: 40px;
 											margin-right: 14px;
 											width: 40px;
@@ -188,7 +187,7 @@
 										style="
 											display: flex;
 											flex-direction: column;
-											grow: 1;
+											flex-grow: 1;
 											justify-content: center;
 										"
 									>
@@ -196,7 +195,7 @@
 											style="
 												background-color: #f4f4f4;
 												border-radius: 4px;
-												grow: 0;
+												flex-grow: 0;
 												height: 14px;
 												margin-bottom: 6px;
 												width: 100px;
@@ -206,7 +205,7 @@
 											style="
 												background-color: #f4f4f4;
 												border-radius: 4px;
-												grow: 0;
+												flex-grow: 0;
 												height: 14px;
 												width: 60px;
 											"
@@ -286,7 +285,7 @@
 												transform: rotate(-45deg) translateX(3px)
 													translateY(1px);
 												width: 12.5px;
-												grow: 0;
+												flex-grow: 0;
 												margin-right: 14px;
 												margin-left: 2px;
 											"
@@ -306,7 +305,7 @@
 											style="
 												background-color: #f4f4f4;
 												border-radius: 50%;
-												grow: 0;
+												flex-grow: 0;
 												height: 20px;
 												width: 20px;
 											"
@@ -326,7 +325,7 @@
 									<div style="margin-left: auto">
 										<div
 											style="
-												width: 0px;
+												width: 0;
 												border-top: 8px solid #f4f4f4;
 												border-right: 8px solid transparent;
 												transform: translateY(16px);
@@ -335,7 +334,7 @@
 										<div
 											style="
 												background-color: #f4f4f4;
-												grow: 0;
+												flex-grow: 0;
 												height: 12px;
 												width: 16px;
 												transform: translateY(-4px);
@@ -356,7 +355,7 @@
 									style="
 										display: flex;
 										flex-direction: column;
-										grow: 1;
+										flex-grow: 1;
 										justify-content: center;
 										margin-bottom: 24px;
 									"
@@ -365,7 +364,7 @@
 										style="
 											background-color: #f4f4f4;
 											border-radius: 4px;
-											grow: 0;
+											flex-grow: 0;
 											height: 14px;
 											margin-bottom: 6px;
 											width: 224px;
@@ -375,7 +374,7 @@
 										style="
 											background-color: #f4f4f4;
 											border-radius: 4px;
-											grow: 0;
+											flex-grow: 0;
 											height: 14px;
 											width: 144px;
 										"
