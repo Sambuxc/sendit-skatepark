@@ -1,4 +1,4 @@
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -10,10 +10,10 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			// Use NUXT_PUBLIC_API_BASE from environment at runtime.
-			apiBase: process.env.API_BASE || '',
+			mailApi: process.env.NUXT_MAIL_SERVER_API || '',
 		},
 	},
 	vite: {
 		plugins: [tailwindcss()],
 	},
-});
+})
