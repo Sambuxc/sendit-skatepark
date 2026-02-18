@@ -1,44 +1,86 @@
 <template>
 	<h3>Get in touch</h3>
-	<form id="contact-us" @submit="onFormSubmit" class="form">
+	<form
+		id="contact-us"
+		class="form"
+		@submit="onFormSubmit"
+	>
 		<div class="field">
 			<label for="name">Your name</label>
-			<input id="name" type="text" name="name" placeholder="Your name" v-model="name" autocomplete="given-name" :aria-invalid="getInvalidMsg(name)" />
-			<InvalidMsg v-if="getInvalidMsg(name)" :msg="getInvalidMsg(name)"/>
+			<input
+				id="name"
+				v-model="name"
+				type="text"
+				name="name"
+				placeholder="Your name"
+				autocomplete="given-name"
+				:aria-invalid="getInvalidMsg(name)"
+			/>
+			<InvalidMsg
+				v-if="getInvalidMsg(name)"
+				:msg="getInvalidMsg(name)"
+			/>
 		</div>
 
 		<div class="field">
 			<label for="email">Your email</label>
-			<input id="email" type="email" name="email" placeholder="Your email" v-model="email" autocomplete="email" />
+			<input
+				id="email"
+				v-model="email"
+				type="email"
+				name="email"
+				placeholder="Your email"
+				autocomplete="email"
+			/>
 			<!-- <InvalidMsg v-if="invalidName" :msg="invalidName"/> -->
 		</div>
 
 		<div class="field">
 			<label for="subject">Subject</label>
-			<input id="subject" type="text" name="subject" placeholder="Subject" v-model="subject" />
+			<input
+				id="subject"
+				v-model="subject"
+				type="text"
+				name="subject"
+				placeholder="Subject"
+			/>
 			<!-- <InvalidMsg v-if="invalidName" :msg="invalidName"/> -->
 		</div>
 
 		<div class="field">
 			<label for="message">Message</label>
-			<textarea id="message" type="text" name="message" v-model="message"/>
+			<textarea
+				id="message"
+				v-model="message"
+				type="text"
+				name="message"
+			/>
 			<!-- <InvalidMsg v-if="invalidName" :msg="invalidName"/> -->
 		</div>
 
 		<div class="field">
-			<button type="submit" :disabled="submitting">
+			<button
+				type="submit"
+				:disabled="submitting"
+			>
 				<span v-if="submitting">Submitting...</span>
 				<span v-else>Send</span>
 			</button>
-			<InvalidMsg v-if="invalidSubmit" :msg="invalidSubmit"/>
-			<InvalidMsg v-if="statusMsg" :msg="statusMsg"/>
+			<InvalidMsg
+				v-if="invalidSubmit"
+				:msg="invalidSubmit"
+			/>
+			<InvalidMsg
+				v-if="statusMsg"
+				:msg="statusMsg"
+			/>
 		</div>
 	</form>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import InvalidMsg from './form/InvalidMsg.vue';
+import InvalidMsg from './form/InvalidMsg.vue'
 
 const submitting = ref(false)
 const email = ref('')
@@ -79,7 +121,7 @@ const getInvalidMsg = (field) => {
 async function onFormSubmit(e) {
 	e.preventDefault()
 	// Show loading state
-	submitting.value = true;
+	submitting.value = true
 
 	validateFields()
 
@@ -100,20 +142,20 @@ async function onFormSubmit(e) {
 				headers: {
 					'Content-Type': 'application/json',
 				},
-				body: JSON.stringify(formData)
-			});
+				body: JSON.stringify(formData),
+			})
 
-			const data = await response.json();
+			const data = await response.json()
 
 			if (response.ok) {
-				invalidSubmit.value = 'Message sent successfully!';
-				form.reset(); // Clear the form
+				invalidSubmit.value = 'Message sent successfully!'
+				form.reset() // Clear the form
 			} else {
-				invalidSubmit.value = `Error: ${data.message || 'Failed to send message'}`;
+				invalidSubmit.value = `Error: ${data.message || 'Failed to send message'}`
 			}
 		} catch (error) {
-			invalidSubmit.value = 'Network error. Please try again.';
-			console.error('Error:', error);
+			invalidSubmit.value = 'Network error. Please try again.'
+			console.error('Error:', error)
 		} finally {
 			// Reset loading state
 			submitting.value = false

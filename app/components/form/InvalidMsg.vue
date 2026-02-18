@@ -3,9 +3,10 @@
 </template>
 
 <script setup>
-	defineProps({
-		msg: {
-			type: String,
-		}
-	})
+defineProps({
+	msg: {
+		type: String,
+		default: '',
+	},
+})
 </script>

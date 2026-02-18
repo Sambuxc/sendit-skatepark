@@ -1,12 +1,6 @@
 <template>
-	<header
-		:class="[
-			'flex flex-col items-center w-full',
-			headerStyles,
-			bgColor,
-		]"
-	>
-	<slot></slot>
+	<header :class="['flex flex-col items-center w-full', headerStyles, bgColor]">
+		<slot></slot>
 	</header>
 </template>
 
@@ -20,5 +14,5 @@ defineProps({
 		type: String,
 		default: '',
 	},
-});
+})
 </script>

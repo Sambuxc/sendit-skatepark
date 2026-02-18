@@ -1,5 +1,5 @@
 button {
-	@apply border-0 appearance-none
+	@apply border-0 appearance-none;
 }
 
 .btn-primary {

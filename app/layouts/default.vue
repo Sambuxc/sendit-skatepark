@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <NuxtLoadingIndicator />
+	<div>
+		<NuxtLoadingIndicator />
 
 		<NavBar />
 
-    <NuxtPage />
-
-
-  </div>
+		<NuxtPage />
+	</div>
 </template>

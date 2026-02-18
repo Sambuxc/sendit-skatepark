@@ -1,21 +1,21 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 /* @import "tailwindcss" prefix(tw); For prefixing */
 
 @theme {
-  --color-primary: var(--color-emerald-500);
-		/* Custom brand colors - these will be available as bg-blue, bg-green, etc. */
-		--color-blue: #007DC5;
-		--color-green: #009659;
-		--color-red: #ED1C24;
-		--color-yellow: #FFF200;
+	--color-primary: var(--color-emerald-500);
+	/* Custom brand colors - these will be available as bg-blue, bg-green, etc. */
+	--color-blue: #007dc5;
+	--color-green: #009659;
+	--color-red: #ed1c24;
+	--color-yellow: #fff200;
 }
 
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }

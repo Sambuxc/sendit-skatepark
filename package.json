@@ -1,41 +1,44 @@
 {
-  "name": "nuxt-app",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "^0.11.3",
-    "@tailwindcss/vite": "^4.1.18",
-    "nuxt": "^4.2.2",
-    "pinia": "^3.0.4",
-    "tailwindcss": "^4.1.18",
-    "vue": "^3.5.26",
-    "vue-router": "^4.6.4"
-  },
-  "devDependencies": {
-    "@nuxt/eslint": "^1.12.1",
-    "@nuxt/eslint-config": "^1.12.1",
-    "eslint": "^9.39.2",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "vite-plugin-eslint": "^1.8.1"
-  },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "@parcel/watcher",
-      "@tailwindcss/oxide",
-      "esbuild",
-      "unrs-resolver"
-    ]
-  },
-  "packageManager": "pnpm@10.26.2+sha256.63b50a4ba15cde20006ddba5d9e21fd623e23f094c9f63bb15f686b0e496aed6"
+	"name": "nuxt-app",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"lint": "eslint . && prettier --check .",
+		"lint:fix": "eslint . --fix && prettier --write .",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"dependencies": {
+		"@pinia/nuxt": "^0.11.3",
+		"@tailwindcss/vite": "^4.1.18",
+		"nuxt": "^4.2.2",
+		"pinia": "^3.0.4",
+		"tailwindcss": "^4.1.18",
+		"vue": "^3.5.26",
+		"vue-router": "^4.6.4"
+	},
+	"devDependencies": {
+		"@nuxt/eslint": "^1.12.1",
+		"@nuxt/eslint-config": "^1.12.1",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"prettier": "^3.8.1",
+		"vite-plugin-eslint": "^1.8.1"
+	},
+	"pnpm": {
+		"ignoredBuiltDependencies": [
+			"@parcel/watcher",
+			"@tailwindcss/oxide",
+			"esbuild",
+			"unrs-resolver"
+		]
+	},
+	"packageManager": "pnpm@10.26.2+sha256.63b50a4ba15cde20006ddba5d9e21fd623e23f094c9f63bb15f686b0e496aed6"
 }

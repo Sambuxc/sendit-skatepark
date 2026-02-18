@@ -1,8 +1,7 @@
-
 <script setup>
-import Image from '../assets/images/sis-logo.svg';
+import Image from '../assets/images/sis-logo.svg'
 </script>
 
 <template>
-    <img :src="Image" />
+	<img :src="Image" />
 </template>
