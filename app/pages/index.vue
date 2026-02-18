@@ -51,12 +51,12 @@
 			<div
 				class="md:flex-1 flex flex-col items-center justify-center order-first md:order-last"
 			>
-				<article class="my-2 p-5 w-full">
+				<article class="my-2 py-5 px-12 w-full">
 					<h2>Events</h2>
 
-					<p class="text-center">
-						We provide portable ramps for a variety of events,<br />community
-						fairs, charity events, school fairs, <br />birthdays and private
+					<p>
+						We provide portable ramps for a variety of events, community
+						fairs, charity events, school fairs, birthdays and private
 						parties.
 					</p>
 				</article>
@@ -69,7 +69,7 @@
 			<div
 				class="md:flex-1 flex flex-col items-center justify-center order-last md:order-first"
 			>
-				<article class="my-2 py-5 px-12 w-full">
+				<article class="my-2 py-5 px-12 w-full flex flex-col gap-5">
 					<h2>We've been at</h2>
 
 					<ul class="mb-5 list-disc list-inside pl-5 text-left">
@@ -480,9 +480,9 @@
 			class="relative brand-top-border py-12 px-5 bg-green text-center"
 		>
 			<h2><span class="italic">SEND IT</span>&nbsp; Skateparks</h2>
-			<h2 class="subheading">In Your Local Area</h2>
+			<h2 class="subheading">In Stockport Local Area</h2>
 			<p class="mb-5">
-				We are always on the move, find us in your local area. Charity events,
+				We are always on the move, find us in Stockport and surrounding areas.<br/>Birthday parties, Charity events,
 				skate parks, schools, and more.
 			</p>
 

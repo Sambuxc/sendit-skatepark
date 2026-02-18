@@ -1,7 +1,5 @@
 html {
-	font-family:
-		'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji',
-		serif;
+	font-family: 'Roboto, Helvetica Neue, Arial', sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -40,8 +38,4 @@ a {
 
 a:has(img) {
 	@apply inline-block;
-}
-
-article p {
-	@apply text-left;
 }
