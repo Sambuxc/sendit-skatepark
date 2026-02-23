@@ -1,4 +1,4 @@
-## Publishing to Github pages
+## Publishing to Github pages (release procedure)
 
 Reference: https://dev.to/leamsigc/nuxt-build-vs-nuxt-generate-what-is-the-difference-759
 
@@ -7,12 +7,14 @@ Reference: https://dev.to/leamsigc/nuxt-build-vs-nuxt-generate-what-is-the-diffe
 - `nuxt generate` for static-site app
 
 2. The generated files will be in the `dist` directory.
-- Commit the contents of `dist` directory to the release branch
+- Copy the contents of `.output` directory to the root level of the release branch
+- Commit and push the changes
 - This will trigger the github pages actions already setup for this repo
 
 
 
-# ✨ Nuxt 4 starter ✨
+## Template Details
+### ✨ Nuxt 4 starter ✨
 
 This is a boilerplate for starting Nuxt4 projects with Vite, TypeScript, ESLint, Tailwind CSS and Pinia
 
