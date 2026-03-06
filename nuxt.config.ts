@@ -9,8 +9,7 @@ export default defineNuxtConfig({
 	modules: ['@pinia/nuxt', '@nuxt/eslint'],
 	runtimeConfig: {
 		public: {
-			// Use NUXT_PUBLIC_API_BASE from environment at runtime.
-			mailApi: process.env.NUXT_MAIL_SERVER_API || '',
+			NUXT_MAIL_SERVER_API: process.env.NUXT_MAIL_SERVER_API,
 		},
 	},
 	vite: {
