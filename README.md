@@ -1,15 +1,18 @@
 ## Publishing to Github pages (release procedure)
 
-Reference: https://dev.to/leamsigc/nuxt-build-vs-nuxt-generate-what-is-the-difference-759
+Deployment is fully automated via GitHub Actions (`.github/workflows/deploy.yml`).
 
-1. To publish this app, run one of these cli cmd's:
-- `nuxt build` for server-side app
-- `nuxt generate` for static-site app
+1. Push to `main` — the workflow will automatically:
+   - Install dependencies
+   - Run `nuxt generate` to produce a static site
+   - Deploy `.output/public` directly to GitHub Pages
 
-2. The generated files will be in the `dist` directory.
-- Copy the contents of `.output` directory to the root level of the release branch
-- Commit and push the changes
-- This will trigger the github pages actions already setup for this repo
+2. **Required one-time setup in GitHub repo settings:**
+   - Go to **Settings → Pages → Source** and set it to **"GitHub Actions"**
+   - Go to **Settings → Secrets and variables → Actions** and add secret:
+     - `NUXT_PUBLIC_MAIL_API` = `https://your-mail-server/send-mailer`
+
+> Local dev: set `NUXT_PUBLIC_MAIL_API=http://localhost:3333/send-mailer` in your `.env` file.
 
 
 
