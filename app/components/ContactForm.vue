@@ -1,39 +1,83 @@
 <template>
 	<h3>Get in touch</h3>
-	<form id="contact-us" class="form" @submit="onFormSubmit">
+	<form
+		id="contact-us"
+		class="form"
+		@submit="onFormSubmit"
+	>
 		<div class="field">
 			<label for="name">Your name</label>
-			<input id="name" v-model="name" type="text" name="name" placeholder="Your name" autocomplete="given-name"
-				:aria-invalid="getInvalidMsg(name)" />
-			<InvalidMsg v-if="getInvalidMsg(name)" :msg="getInvalidMsg(name)" />
+			<input
+				id="name"
+				v-model="name"
+				type="text"
+				name="name"
+				placeholder="Your name"
+				autocomplete="given-name"
+				:aria-invalid="getInvalidMsg(name)"
+			/>
+			<InvalidMsg
+				v-if="getInvalidMsg(name)"
+				:msg="getInvalidMsg(name)"
+			/>
 		</div>
 
 		<div class="field">
 			<label for="email">Your email</label>
-			<input id="email" v-model="email" type="email" name="email" placeholder="Your email" autocomplete="email" />
+			<input
+				id="email"
+				v-model="email"
+				type="email"
+				name="email"
+				placeholder="Your email"
+				autocomplete="email"
+			/>
 			<!-- <InvalidMsg v-if="invalidName" :msg="invalidName"/> -->
 		</div>
 
 		<div class="field">
 			<label for="subject">Subject</label>
-			<input id="subject" v-model="subject" type="text" name="subject" placeholder="Subject" />
+			<input
+				id="subject"
+				v-model="subject"
+				type="text"
+				name="subject"
+				placeholder="Subject"
+			/>
 			<!-- <InvalidMsg v-if="invalidName" :msg="invalidName"/> -->
 		</div>
 
 		<div class="field">
 			<label for="message">Message</label>
-			<textarea id="message" v-model="message" type="text" name="message" />
+			<textarea
+				id="message"
+				v-model="message"
+				type="text"
+				name="message"
+			/>
 			<!-- <InvalidMsg v-if="invalidName" :msg="invalidName"/> -->
 		</div>
 
 		<div class="field">
-			<div class="cf-turnstile" data-sitekey="0x4AAAAAACsPS8ootg3uaoHB" />
-			<button type="submit" :disabled="submitting">
+			<div
+				class="cf-turnstile"
+				data-sitekey="0x4AAAAAACsPS8ootg3uaoHB"
+			/>
+			<button
+				type="submit"
+				:disabled="submitting"
+			>
 				<span v-if="submitting">Submitting...</span>
 				<span v-else>Send</span>
 			</button>
-			<InvalidMsg v-if="invalidSubmit" :msg="invalidSubmit" />
-			<InvalidMsg v-if="statusMsg" :msg="statusMsg" />
+			<InvalidMsg
+				v-if="invalidSubmit"
+				:msg="invalidSubmit"
+			/>
+			<InvalidMsg
+				v-if="statusMsg"
+				:msg="statusMsg"
+			/>
 		</div>
 	</form>
 </template>
@@ -52,7 +96,8 @@ useHead({
 	],
 })
 
-const config = useRuntimeConfig()
+const CONTACT_FORM_ENDPOINT = 'https://lib-tech.work/send-mailer'
+// const config = useRuntimeConfig()
 const submitting = ref(false)
 const email = ref('')
 const name = ref('')
@@ -114,9 +159,7 @@ async function onFormSubmit(e) {
 		}
 
 		try {
-			const reqUrl = config.public.NUXT_MAIL_SERVER_API
-
-			const response = await fetch(reqUrl, {
+			const response = await fetch(CONTACT_FORM_ENDPOINT, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',
