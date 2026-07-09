@@ -70,9 +70,12 @@ nav {
 	max-height: 100vh;
 	width: 100vw;
 	height: 100vh;
-	background: rgba(255, 255, 255, 0.95);
+	background: rgba(255, 255, 255, 0.8);
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
+	position: fixed;
+	inset: 0;
+	overflow: hidden;
 
 	/* Animate open/close */
 	opacity: 0;

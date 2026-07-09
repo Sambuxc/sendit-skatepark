@@ -42,6 +42,8 @@
 		<!-- Mobile fullscreen nav dialog -->
 		<dialog ref="dialogRef" id="mobile-nav-menu" aria-label="Navigation menu" class="mobile-nav-dialog"
 			@close="onDialogClose">
+			<SkateRampBackground />
+
 			<button class="absolute top-5 right-5 m-4 max-w-12 z-999 cursor-pointer" @click="toggleMenu"
 				aria-label="Close menu" aria-controls="mobile-nav-menu-close">
 				<div class="hamburger-icon open">
