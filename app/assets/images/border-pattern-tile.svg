@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="40" viewBox="0 0 320 40">
+	<!--
+		Send It Skatepark — border pattern tile
+		Horizontal repeating tile: 8 cells × 40px
+		Half-circles alternate top/bottom edges, cycling brand colours
+		Small quarter-circle accents in opposing corners
+	-->
+	<rect width="320" height="40" fill="#000"/>
+
+	<!-- Cell 1 (0–40): Yellow semicircle from bottom -->
+	<path d="M0,40 A20,20 0 0,1 40,40 Z" fill="#fff200"/>
+
+	<!-- Cell 2 (40–80): Red semicircle from top, small blue accent bottom-right -->
+	<path d="M40,0 A20,20 0 0,0 80,0 Z" fill="#ed1c24"/>
+	<path d="M80,40 A10,10 0 0,0 70,30 L80,30 Z" fill="#007dc5"/>
+
+	<!-- Cell 3 (80–120): Green semicircle from bottom -->
+	<path d="M80,40 A20,20 0 0,1 120,40 Z" fill="#009659"/>
+
+	<!-- Cell 4 (120–160): Blue semicircle from top, small yellow accent bottom-left -->
+	<path d="M120,0 A20,20 0 0,0 160,0 Z" fill="#007dc5"/>
+	<path d="M120,40 A10,10 0 0,1 130,30 L120,30 Z" fill="#fff200"/>
+
+	<!-- Cell 5 (160–200): Red semicircle from bottom -->
+	<path d="M160,40 A20,20 0 0,1 200,40 Z" fill="#ed1c24"/>
+
+	<!-- Cell 6 (200–240): Yellow semicircle from top, small green accent bottom-right -->
+	<path d="M200,0 A20,20 0 0,0 240,0 Z" fill="#fff200"/>
+	<path d="M240,40 A10,10 0 0,0 230,30 L240,30 Z" fill="#009659"/>
+
+	<!-- Cell 7 (240–280): Blue semicircle from bottom -->
+	<path d="M240,40 A20,20 0 0,1 280,40 Z" fill="#007dc5"/>
+
+	<!-- Cell 8 (280–320): Green semicircle from top, small red accent bottom-left -->
+	<path d="M280,0 A20,20 0 0,0 320,0 Z" fill="#009659"/>
+	<path d="M280,40 A10,10 0 0,1 290,30 L280,30 Z" fill="#ed1c24"/>
+</svg>

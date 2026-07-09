@@ -1,21 +1,12 @@
 <template>
 	<div class="heading-main">
-		<template
-			v-for="(line, index) in lines"
-			:key="index"
-		>
-			<span
-				class="heading-main__divider"
-				:class="dividerColorClass"
-			/>
+		<template v-for="(line, index) in lines" :key="index">
+			<span class="heading-main__divider" :class="dividerColorClass" />
 			<span class="heading-main__line">
 				{{ line }}
 			</span>
 		</template>
-		<span
-			class="heading-main__divider"
-			:class="dividerColorClass"
-		/>
+		<span class="heading-main__divider" :class="dividerColorClass" />
 	</div>
 </template>
 
@@ -35,8 +26,9 @@ const props = defineProps({
 })
 
 const lines = computed(() => {
+	console.log(props.text)
 	return props.text
-		.split('\n')
+		.split('/n')
 		.map((line) => line.trim())
 		.filter((line) => line.length > 0)
 })
