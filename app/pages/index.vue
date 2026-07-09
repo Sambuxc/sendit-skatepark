@@ -6,10 +6,10 @@
 					class="absolute inset-0 left-0 top-0 m-auto md:min-w-78.75 md:min-h-140 md:max-w-157.5 md:max-h-280"
 				>
 					<iframe
-						class="rounded-md"
+						class="rounded-md pointer-events-none"
 						width="100%"
 						height="100%"
-						src="https://www.youtube.com/embed/2nYtd-ewtuE?rel=0&autoplay=0&loop=1&controls=0&related=0"
+						src="https://www.youtube.com/embed/2nYtd-ewtuE?rel=0&autoplay=0&loop=1&controls=0&related=0&modestbranding=1"
 						allow="
 							accelerometer;
 							autoplay;
