@@ -3,13 +3,11 @@
 		<HeaderDefault>
 			<article class="relative bg-black w-full h-screen">
 				<div
-					class="absolute inset-0 left-0 top-0 m-auto md:min-w-78.75 md:min-h-140 md:max-w-157.5 md:max-h-280"
+					class="absolute inset-0 left-0 top-0 m-auto overflow-hidden rounded-md md:min-w-78.75 md:min-h-140 md:max-w-157.5 md:max-h-280"
 				>
 					<iframe
-						class="rounded-md"
-						width="100%"
-						height="100%"
-						src="https://www.youtube.com/embed/2nYtd-ewtuE?rel=0&autoplay=0&loop=1&controls=0&related=0"
+						class="youtube-chromeless-embed pointer-events-none"
+						src="https://www.youtube.com/embed/2nYtd-ewtuE?rel=0&autoplay=0&loop=1&controls=0&related=0&modestbranding=1"
 						allow="
 							accelerometer;
 							autoplay;
@@ -544,3 +542,17 @@
 		</footer>
 	</main>
 </template>
+
+<style scoped>
+/* Oversize + shift the embed so YouTube's title/logo/share overlay
+   renders outside the clipped container instead of on top of it -
+   there's no official param to hide it once controls=0 already
+   removes the play bar. */
+.youtube-chromeless-embed {
+	position: absolute;
+	top: -14%;
+	left: 0;
+	width: 100%;
+	height: 128%;
+}
+</style>
