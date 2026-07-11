@@ -93,6 +93,7 @@ const activate = () => {
 .yt-facade {
   position: relative;
   width: 100%;
+  height: stretch;
   aspect-ratio: 16 / 9;
   /* reserves space -> zero layout shift */
   overflow: hidden;
